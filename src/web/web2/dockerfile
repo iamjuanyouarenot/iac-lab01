@@ -1,8 +1,8 @@
 FROM nginx:alpine
 
-COPY index.html /usr/share/nginx/html/
+COPY web2.html /usr/share/nginx/html/
 
-EXPOSE 4000
+EXPOSE 4001
 
 # docker build -t web .
-# docker run --name test3 -p 8080:80 web
+# docker run --name test3 -p 4001:80 web 
